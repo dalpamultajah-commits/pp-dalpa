@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  
+  <meta charset="UTF-8">
+  
+  <meta name="description" content="Portofolio pribadi M. Dwi Arsyad Siddiq, mahasiswa informatika yang fokus pada web development dan data.">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+  <meta property="og:title" content="Portofolio: M. Dwi Arsyad Siddiq">
+  <meta property="og:image" content="images/foto-profil-arsyad.jpg">
+  <link rel="stylesheet" href="style.css">
+  <title>Portofolio | Dalpa Multajah Kamilah</title>
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   
+  <header class="site-header">
+    <div class="container header-content">
+      <!-- Laporan: h1 hanya satu kali di seluruh halaman sebagai judul utama -->
+      <h1 id="site-title">Portofolio Dalpa Multajah Kamilah</h1>
+
+      <!-- Laporan: nav untuk navigasi utama, diberi aria-label demi aksesibilitas -->
+      <nav aria-label="Navigasi utama">
+        <ul class="nav-list">
+          <li><a href="#tentang">Tentang</a></li>
+          <li><a href="#pendidikan">Riwayat</a></li>
+          <li><a href="#keahlian">Keahlian</a></li>
+          <li><a href="#projek">Karya</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+           <li><a href="Kumpulan_Tugas/kumpulan_tugas.html">Kumpulan Tugas</a></li>
+        </ul>
+      </nav>
+    </div>
+
+  </header>
+
+  <!-- Laporan: Bagian hero sebagai pengenalan singkat dengan desain estetik -->
+  <section class="hero" aria-labelledby="hero-heading">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h2 id="hero-heading">Halo, saya Dalpa </h2>
+        <p>
+          Mahasiswa <abbr title="Teknologi Informasi">TI</abbr> yang senang bereksperimen dengan
+          <abbr title="HyperText Markup Language">HTML</abbr>, CSS, dan Python. Saya suka mengubah ide sederhana
+          menjadi tampilan web yang rapi, fungsional, dan ramah pengguna.
+        </p>
+        <!-- Laporan: Box highlight yang dapat difokuskan dengan keyboard (tabindex=0) -->
+        <div class="highlight-box" tabindex="0">
+          Fokus saya di tahun <time datetime="2025">2025</time> adalah membangun portofolio web,
+          mengasah logika pemrograman, dan memahami dasar-dasar data.
+        </div>
+      </div>
+
+      <!-- Laporan: Foto profil dengan alt text yang meaningful -->
+      <div class="hero-photo-wrapper">
+        <img
+          src="Gambar WhatsApp 2025-11-24 pukul 14.21.10_ac80bc61.jpg"
+          alt="Foto Dalfa sedang tersenyum mengenakan kemeja kasual."
+          class="hero-photo">
+      </div>
+    </div>
+  </section>
+
+  <!-- Laporan: Layout utama berisi main (konten utama) dan aside (informasi tambahan) -->
+  <div class="container layout">
+    <!-- Laporan: MAIN sebagai konten utama portofolio -->
+    <main>
+      <!-- Laporan: SECTION Tentang Saya berisi informasi pribadi -->
+      <section id="tentang" aria-labelledby="tentang-heading" class="card">
+        <h2 id="tentang-heading">Tentang Saya</h2>
+        <p>
+          Saya Dalfa Multajilah, seorang mahasiswa informatika yang sedang belajar dan tertarik pada pengembangan web,
+          matematika dasar, dan penerapan teknologi dalam kehidupan sehari-hari.
+        </p>
+        <p>
+          Saya percaya bahwa teknologi yang baik adalah teknologi yang
+          <strong>mudah dipahami</strong>, <strong>mudah digunakan</strong>, dan
+          <strong>bermanfaat bagi banyak orang</strong>.
+        </p>
+        <p class="last-updated">
+          Portofolio ini terakhir diperbarui pada
+          <time datetime="2025-11-24">24 November 2025</time>.
+        </p>
+      </section>
+
+      <!-- Laporan: SECTION Riwayat Pendidikan / Pengalaman menggunakan tabel lengkap -->
+      <section id="pendidikan" aria-labelledby="riwayat-heading" class="card">
+        <h2 id="riwayat-heading">Riwayat Pendidikan &amp; Pengalaman</h2>
+
+        <!-- Laporan: Tabel dengan caption, thead, tbody, tfoot, dan satu baris dengan colspan -->
+        <table>
+          <caption>Ringkasan Riwayat Pendidikan dan Pengalaman Organisasi</caption>
+          <thead>
+            <tr>
+              <th>Tahun</th>
+              <th>Institusi / Kegiatan</th>
+              <th>Peran</th>
+              <th>Keterangan</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2013 - 2019</td>
+              <td>Mi Condong</td>
+              <td>Siswa aktif </td>
+              <td>Siswa yang ceria pintar dan suka ikut kegiatan lomba.</td>
+            </tr>
+            <tr>
+              <td>2019 - 2022</td>
+              <td>Mtsn 1 Kota tasikmalaya</td>
+              <td>Siswa Aktif</td>
+              <td>Siswa yang baik rajin dan giat dan banyak mengikuti kegiatan ekstrakulikuler</td>
+            </tr>
+            <tr>
+              <!-- Laporan: Penggunaan colspan untuk menggabungkan tiga kolom pada baris khusus -->
+              <td>2022 - 2025</td>
+              <td>MAN 1 Tasikmalaya</td>
+              <td>Siswa aktif</td>
+              <td>Siswa Berprestasi dan suka berdiskusi bersama teman.</td>
+            </tr>
+            <tr>
+            <td>2025 - Sekarang</td>
+              <td>Universitas Mayasari Bakti</td>
+              <td>Mahasiswa</td>
+              <td>Belajar mengenai pembuatan web mengunakan html dan style css.</td>
+            </tr>
+            </tbody>
+          <tfoot>
+            <tr>
+              <!-- Laporan: tfoot untuk catatan penutup tabel -->
+              <td colspan="4">Catatan: Riwayat ini bersifat dinamis dan akan diperbarui seiring bertambahnya pengalaman.</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+
+      <!-- Laporan: SECTION Keahlian memuat ul dan dl (description list) -->
+      <section id="keahlian" aria-labelledby="keahlian-heading" class="card">
+        <h2 id="keahlian-heading">Keahlian</h2>
+
+        <!-- Laporan: Daftar keahlian utama menggunakan unordered list -->
+        <h3>Keahlian Utama</h3>
+        <ul class="skills-list">
+          <li>HTML Semantik &amp; Aksesibilitas</li>
+          <li>CSS Layout (Flexbox &amp; Grid)</li>
+          <li>Logika Pemrograman dengan Python</li>
+          <li>Dasar-dasar Statistik untuk Informatika</li>
+        </ul>
+
+        <!-- Laporan: Description list untuk penjelasan skill secara detail -->
+        <h3>Detail Keahlian</h3>
+        <dl class="skills-description">
+          <dt>Front-End Dasar</dt>
+          <dd>Mampu membuat struktur halaman yang rapi dan responsif menggunakan HTML &amp; CSS.</dd>
+
+          <dt>Pemrograman Python</dt>
+          <dd>Menguasai tipe data, percabangan, perulangan, fungsi, dan sedikit file handling.</dd>
+
+          <dt>Komunikasi &amp; Kolaborasi</dt>
+          <dd>Terbiasa berdiskusi, bekerja dalam tim kecil, dan menyusun laporan tugas.</dd>
+        </dl>
+      </section>
+
+      <!-- Laporan: SECTION Karya / Projek berisi beberapa article, gambar, dan iframe (multimedia) -->
+      <section id="projek" aria-labelledby="projek-heading" class="card">
+        <h2 id="projek-heading">Karya &amp; Projek</h2>
+        <p class="small-text">
+          Beberapa proyek latihan yang saya kerjakan untuk melatih logika dan kemampuan desain.
+        </p>
+
+        <!-- Laporan: Grid projek berisi beberapa article terpisah -->
+        <div class="projects-grid">
+          <!-- Laporan: ARTICLE 1 menampilkan project dengan gambar statis -->
+          <article class="project-card" aria-labelledby="proj1-title">
+            <h3 id="proj1-title">Landing Page Portofolio</h3>
+            <img
+              src="images/project-landing-page.jpg"
+              alt="Tampilan landing page portofolio sederhana dengan latar gradasi biru dan kartu profil."
+              class="project-image">
+            <p>
+              Halaman portofolio statis yang menampilkan informasi diri, riwayat, dan kontak.
+              Dibuat sebagai latihan HTML &amp; CSS dasar.
+            </p>
+            <!-- Laporan: Link ke project dibuka di tab baru (target="_blank") -->
+            <p>
+              <a href="https://contoh-link-landing-page.com"
+                 target="_blank"
+                 rel="noopener noreferrer">
+                Lihat project
+              </a>
+            </p>
+          </article>
+
+          <!-- Laporan: ARTICLE 2 menggunakan iframe YouTube sebagai konten multimedia -->
+          <article class="project-card" aria-labelledby="proj2-title">
+            <h3 id="proj2-title">Demo Website Resep Sederhana</h3>
+            <iframe
+              class="project-iframe"
+              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              title="Demo Website Resep Sederhana"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+            <p>
+              Video demo website resep yang menampilkan daftar resep harian dengan layout yang ramah pengguna.
+            </p>
+            <p>
+              <a href="https://contoh-link-website-resep.com"
+                 target="_blank"
+                 rel="noopener noreferrer">
+                Buka website resep
+              </a>
+            </p>
+          </article>
+        </div>
+
+        <!-- Laporan: Audio sebagai contoh tambahan elemen multimedia -->
+        <h3>Podcast Mini: Ngobrol Informatika</h3>
+        <audio controls aria-label="Podcast mini tentang pengalaman belajar informatika">
+          <source src="audio/podcast-belajar-informatika.mp3" type="audio/mpeg">
+          Browser Anda tidak mendukung pemutar audio.
+        </audio>
+      </section>
+
+      <!-- Laporan: SECTION Form Kontak dengan semua field dan validasi yang diminta -->
+      <section id="kontak" aria-labelledby="kontak-heading" class="card">
+        <h2 id="kontak-heading">Kontak</h2>
+        <p id="kontak-deskripsi" class="small-text">
+          Jika Anda memiliki saran, pertanyaan, atau peluang kolaborasi, silakan isi formulir di bawah ini.
+        </p>
+
+        <!-- Laporan: Form dengan aria-labelledby dan aria-describedby untuk aksesibilitas -->
+        <form action="#" method="post"
+              aria-labelledby="kontak-heading"
+              aria-describedby="kontak-deskripsi">
+          <!-- Laporan: Input nama lengkap dengan required, minlength, dan maxlength -->
+          <div class="form-group">
+            <label for="nama">Nama Lengkap</label>
+            <input type="text" id="nama" name="nama"
+                   required minlength="3" maxlength="50"
+                   aria-describedby="nama-help">
+            <p id="nama-help" class="small-text">
+              Masukkan nama lengkap Anda (minimal 3 karakter).
+            </p>
+          </div>
+
+          <!-- Laporan: Input email bertipe email dengan validasi otomatis browser -->
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email"
+                   required maxlength="100"
+                   aria-describedby="email-help">
+            <p id="email-help" class="small-text">
+              Gunakan email aktif agar saya dapat merespon pesan Anda.
+            </p>
+          </div>
+
+          <!-- Laporan: Input nomor telepon dengan tipe tel dan batas panjang -->
+          <div class="form-group">
+            <label for="nomor">Nomor WhatsApp / HP</label>
+            <input type="tel" id="nomor" name="nomor"
+                   required minlength="8" maxlength="15"
+                   aria-describedby="nomor-help">
+            <p id="nomor-help" class="small-text">
+              Contoh: 0812xxxxxxxx (tanpa spasi atau simbol).
+            </p>
+          </div>
+
+          <!-- Laporan: Textarea untuk pesan dengan minlength & maxlength -->
+          <div class="form-group">
+            <label for="pesan">Pesan</label>
+            <textarea id="pesan" name="pesan"
+                      required minlength="10" maxlength="500"
+                      aria-describedby="pesan-help"></textarea>
+            <p id="pesan-help" class="small-text">
+              Tuliskan pesan secara singkat dan jelas (10–500 karakter).
+            </p>
+          </div>
+
+          <!-- Laporan: Fieldset + legend untuk radio button jenis kontak -->
+          <fieldset class="form-fieldset">
+            <legend>Jenis Kontak</legend>
+            <p class="small-text">Pilih tujuan utama Anda menghubungi saya.</p>
+
+            <div class="radio-group">
+              <input type="radio" id="jenis-saran" name="jenis_kontak" value="saran" required>
+              <label for="jenis-saran">Saran</label>
+            </div>
+            <div class="radio-group">
+              <input type="radio" id="jenis-pertanyaan" name="jenis_kontak" value="pertanyaan">
+              <label for="jenis-pertanyaan">Pertanyaan</label>
+            </div>
+            <div class="radio-group">
+              <input type="radio" id="jenis-kerja-sama" name="jenis_kontak" value="kerja-sama">
+              <label for="jenis-kerja-sama">Kerja Sama / Project</label>
+            </div>
+          </fieldset>
+
+          <!-- Laporan: Checkbox persetujuan dengan aria-describedby -->
+          <div class="form-group">
+            <input type="checkbox" id="persetujuan" name="persetujuan"
+                   required aria-describedby="persetujuan-help">
+            <label for="persetujuan">
+              Saya setuju data saya digunakan untuk keperluan komunikasi.
+            </label>
+            <p id="persetujuan-help" class="small-text">
+              Data Anda tidak akan dibagikan ke pihak lain tanpa persetujuan.
+            </p>
+          </div>
+
+          <!-- Laporan: Tombol kirim form dengan desain tombol utama -->
+          <button type="submit" class="btn-submit">Kirim Pesan</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Laporan: ASIDE berisi informasi tambahan yang masih terkait dengan profil -->
+    <aside aria-labelledby="aside-heading" class="card aside-card">
+      <h2 id="aside-heading">Ringkasan Profil</h2>
+      <p>
+        Mahasiswa informatika yang gemar belajar
+        <abbr title="User Interface">UI</abbr>,
+        <abbr title="User Experience">UX</abbr>,
+        dan dasar-dasar analisis data.
+      </p>
+
+      <h3>Fokus Belajar Saat Ini</h3>
+      <ul class="skills-list">
+        <li>Semantic HTML &amp; Aksesibilitas</li>
+        <li>CSS Grid &amp; Flexbox</li>
+        <li>Statistik dasar untuk data sains</li>
+      </ul>
+
+      <h3>Kontak Cepat</h3>
+      <p class="small-text">
+        Email:
+        <a href="mailto:arsyad@example.com">Dalpa@example.com</a><br>
+        GitHub:
+        <a href="https://github.com/username-arsyad"
+           target="_blank"
+           rel="noopener noreferrer">
+          github.com/username-Dalpa
+        </a>
+      </p>
+    </aside>
+  </div>
+
+  <!-- Laporan: FOOTER sebagai bagian penutup halaman -->
+  <footer class="site-footer" aria-label="Bagian akhir halaman">
+    <p>
+      &copy; <time datetime="2025">2025</time> Dalpa Multajah Kamilah. Semua hak dilindungi.
+    </p>
+  </footer>
+</body>
+</html>
