@@ -1,0 +1,149 @@
+/* ===== Reset & Dasar ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f4f9;
+  color: #1e1d1a;
+  line-height: 1.6;
+  padding: 2rem;
+}
+
+/* ===== Container Form ===== */
+.form-container {
+  max-width: 600px;
+  background-color: #ffffff;
+  margin: 0 auto;
+  padding: 2rem 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+
+/* ===== Heading ===== */
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #c9a144;
+}
+
+h2 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #1e1d1a;
+  font-size: 1.25rem;
+}
+
+/* ===== Input & Select ===== */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+input[type="file"],
+input[type="color"],
+select {
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  margin-top: 0.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus,
+select:focus {
+  border-color: #c9a144;
+  box-shadow: 0 0 5px rgba(201,161,68,0.5);
+}
+
+/* ===== Labels ===== */
+label {
+  font-weight: 500;
+}
+
+/* ===== Radio & Checkbox ===== */
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 0.5rem;
+  accent-color: #c9a144;
+}
+
+/* ===== Buttons ===== */
+button {
+  background-color: #c9a144;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.25rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-right: 0.5rem;
+}
+
+button:hover {
+  background-color: #a8852f;
+  transform: translateY(-2px);
+}
+
+/* Tombol reset */
+button[type="reset"] {
+  background-color: #e74c3c;
+}
+
+button[type="reset"]:hover {
+  background-color: #c03926;
+}
+
+/* ===== Horizontal line ===== */
+hr {
+  border: 0;
+  border-top: 1px solid #ddd;
+  margin: 2rem 0;
+}
+
+/* ===== Atribut Khusus ===== */
+input[disabled],
+input[readonly] {
+  background-color: #f0f0f0;
+  color: #999;
+  cursor: not-allowed;
+}
+
+input[required] {
+  border-left: 4px solid #c9a144;
+}
+
+/* ===== Select Dropdown ===== */
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #fff;
+  background-image: url("data:image/svg+xml,%3Csvg fill='%23999' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 1rem;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 640px) {
+  .form-container {
+    padding: 1.5rem 1.5rem;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+  }
+}

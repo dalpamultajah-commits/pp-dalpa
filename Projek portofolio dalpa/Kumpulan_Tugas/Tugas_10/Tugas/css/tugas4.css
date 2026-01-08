@@ -1,0 +1,11 @@
+* {
+    box-sizing: border-box; 
+    margin: 0; /* Reset margin default browser */
+    padding: 0; /* Reset padding default browser */
+}
+ .box { width: 200px; height: 100px; background-color: lightblue; border: 5px solid darkblue; 
+ padding: 20px; 
+ margin-bottom: 30px;}
+  
+ .inline-box { display: inline-block; width: 150px; padding: 10px; margin: 10px; 
+}
