@@ -1,0 +1,93 @@
+/* RESET DASAR */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+/* BODY */
+body {
+    background-color: #fff1f5; /* soft pink background */
+    color: #5a2a3a;
+    padding: 40px;
+}
+
+/* JUDUL */
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #c94f7c;
+}
+
+/* CARD DOCUMENT */
+.document {
+    background-color: #ffe4ec;
+    border-radius: 12px;
+    padding: 25px;
+    max-width: 400px;
+    margin: 0 auto 30px auto;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(201, 79, 124, 0.2);
+}
+
+.document h3 {
+    margin-bottom: 15px;
+    color: #b23a67;
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #f7a1b8;
+    color: white;
+    padding: 10px 22px;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e989a6;
+    transform: scale(1.05);
+}
+
+/* LIST CONTAINER */
+.list {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffe4ec;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(201, 79, 124, 0.2);
+}
+
+/* UL */
+.list ul {
+    list-style: none;
+}
+
+/* LI */
+.list li {
+    margin-bottom: 12px;
+}
+
+/* LINK LIST */
+.list a {
+    display: block;
+    text-decoration: none;
+    background-color: #ffd6e2;
+    padding: 12px 18px;
+    border-radius: 10px;
+    color: #7a2945;
+    transition: 0.3s ease;
+    font-weight: 500;
+}
+
+.list a:hover {
+    background-color: #f7a1b8;
+    color: white;
+    transform: translateX(5px);
+}
+
